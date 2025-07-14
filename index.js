@@ -10,3 +10,4 @@ else
 {
     console.log("number is odd")
 }
+consoile.log("Done..")
