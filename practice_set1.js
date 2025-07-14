@@ -23,12 +23,21 @@
 // }
 
 //3
-var year=2020
-if (year%4==0)
+// var year=2020
+// if (year%4==0)
+// {
+//     console.log("Leap Year")
+// }
+// else
+// {
+//     console.log("Not a leap year")
+// }
+
+//4
+var no=5
+var sum=0
+for(var i=1;i<=no;i++)
 {
-    console.log("Leap Year")
+    sum+=i
 }
-else
-{
-    console.log("Not a leap year")
-}
+console.log("Sum of factorial is:",sum)
