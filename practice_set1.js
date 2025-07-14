@@ -34,10 +34,30 @@
 // }
 
 //4
-var no=5
-var sum=0
-for(var i=1;i<=no;i++)
-{
-    sum+=i
-}
-console.log("Sum of factorial is:",sum)
+// var no=5
+// var sum=0
+// for(var i=1;i<=no;i++)
+// {
+//     sum+=i
+// }
+// console.log("Sum of factorial is:",sum)
+
+//5
+// var no=4
+// var fact=1
+// for(var i=no;i>0;i--)
+// {
+//     fact*=i
+// }
+// console.log("Factorail of given number is ",fact)
+
+//6
+// var no=3
+// for(var i=1;i<=10;i++)
+// {
+//     console.log("3 *",i,"=",no*i)
+// }
+
+
+//7
+var no=4567
