@@ -60,4 +60,66 @@
 
 
 //7
-var no=4567
+
+// let num1 = 1234;
+// let result = num1.toString().split('').reverse().join('');
+// console.log(result);
+
+//8 palindrome
+// var num = 121;
+// var strNum = num.toString();
+// var isPalindrome = true; 
+
+// for (var i = 0; i < strNum.length / 2; i++) {
+//     if (strNum[i] !== strNum[strNum.length - 1 - i]) {
+//         isPalindrome = false;  
+//         break;  
+//     }
+// }
+
+// if (isPalindrome) {
+//     console.log('Palindrome');
+// } else {
+//     console.log('Not Palindrome');
+// }
+
+
+//9 prime
+// const num = 11; 
+// let isPrime = true;
+
+// if (num <= 1) {
+//     isPrime = false; 
+// } else {
+//     for (let i = 2; i <= num / 2; i++) {
+//         if (num % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+// }
+
+// if (isPrime) {
+//     console.log(`${num} is a prime number.`);
+// } else {
+//     console.log(`${num} is not a prime number.`);
+// }
+
+
+//10 count didgits in num
+let num = 12345;
+let count = 0;
+
+if (num === 0) {
+    count = 1; 
+} else {
+  
+    if (num < 0) {
+        num = -num;
+    }
+    while (num > 0) {
+        num = (num - (num % 10)) / 10;
+        count++;
+    }
+}
+console.log(count)
