@@ -172,13 +172,51 @@
 // Definition: Determine if a given character is a vowel.
 // Input: a
 // Output: Vowel
-
-
+// var input='a'
+// var vowels=['a','e','i','o','u','A','E','I','O','U']
+// for (var i =0;i<vowels.length;i++)
+// {
+//     if (input==vowels[i])
+//     {
+//         console.log("vowel")
+//         break;
+//     }else{
+//         console.log("constant")
+//         break;
+//     }
+// }
 
 // 15. Simple Calculator
 // Definition: Perform +, -, *, / between two numbers.
 // Input: 4 + 2
 // Output: 6
+
+// var input="4 + 2"
+// var d=input.split(" ")
+// var num1=parseInt(d[0])
+// var op=(d[1])
+// var num2=parseInt(d[2])
+
+// if(op=="+")     
+// {
+//     console.log("Addition is :",(num1+num2))
+// }
+// else if(op=="-")     
+// {
+//     console.log("Substraction is :",(num1-num2))
+// }
+// else if(op=="/")     
+// {
+//     console.log("Division is :",(num1/num2))
+// }
+// else if(op=="*")     
+// {
+//     console.log(" Multiplication is :",(num1*num2))
+// }
+// else if(op=="%")     
+// {
+//     console.log("Modulus  is :",(num1%num2))
+// }
 
 // 16. Find GCD (HCF)
 // Definition: Calculate the greatest common divisor of two numbers.
@@ -206,6 +244,7 @@
 // Definition: A number whose sum of divisors equals itself.
 // Input: 28
 // Output: Perfect
+ 
 
 // 18. Print All Divisors
 // Definition: Display all positive divisors of a number.
