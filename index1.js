@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 mongoose.connect("mongodb+srv://richakanabarmca_db_user:RKMCA@cluster0.rpgtb7z.mongodb.net/" , {
  
 });
