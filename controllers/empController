@@ -1,0 +1,63 @@
+const emp = require("../models/emp");
+
+// GET all employees
+exports.index = (req, res) => {
+  emp.findAll()
+    .then((employees) => {
+      console.log("success fetch", employees);
+      res.send({ message: "success", data: employees });
+    })
+    .catch((error) => {
+      console.error("error", error);
+      res.send({ message: "error", error: error });
+    });
+};
+
+exports.show = (req,res) => {
+    emp.findByPk(req.params.id)
+    .then((employees)=>{
+        console.log("All emp retrieved",employees);
+        res.send({msg:" emp retrieved ",data:employees});
+    })
+    .catch((error)=>{
+    console.error("Error retrieving")})
+};
+
+// CREATE new employee
+exports.store = (req, res) => {
+  emp.create(req.body)
+    .then((newEmp) => {
+      console.log("success create", newEmp);
+      res.send({ message: "success", data: newEmp });
+    })
+    .catch((error) => {
+      console.error("error", error);
+      res.send({ message: "error", error: error });
+    });
+};
+
+// UPDATE employee by ID
+exports.update = (req, res) => {
+  emp.update(req.body, { where: { id: req.params.id } })
+    .then(() => {
+      console.log("success update");
+      res.send({ message: "success", data: req.body });
+    })
+    .catch((error) => {
+      console.error("error", error);
+      res.send({ message: "error", error: error });
+    });
+};
+
+// DELETE employee by ID
+exports.delete = (req, res) => {
+  emp.destroy({ where: { id: req.params.id } })
+    .then(() => {
+      console.log("success delete");
+      res.send({ message: "success" });
+    })
+    .catch((error) => {
+      console.error("error", error);
+      res.send({ message: "error", error: error });
+    });
+};
